@@ -6,10 +6,10 @@ import joblib
 
 
 def preprocess(dataframe: pd.DataFrame, models_dir) -> pd.DataFrame:
-    preprocessed_df = dataframe.copy()
-    preprocessed_df = preprocess_continuous_data(preprocessed_df)
-    preprocessed_df = preprocess_categorical_data(preprocessed_df, models_dir)
-    return preprocessed_df
+    processed_df = dataframe.copy()
+    processed_df = preprocess_continuous_data(processed_df)
+    processed_df = preprocess_categorical_data(processed_df, models_dir)
+    return processed_df
 
 
 def preprocess_continuous_data(dataframe: pd.DataFrame) -> pd.DataFrame:
