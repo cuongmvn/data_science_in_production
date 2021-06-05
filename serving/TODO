@@ -1,0 +1,18 @@
+# Serving - backend
+- Load mode
+- Predict on single parameters
+- Predict on dataframe
+- async function or not
+
+Nice:
+- load model once
+- get model with mlflow
+- get model performances from mlflow server
+- Preprocess the input data by centering and scaling it
+    - https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt
+    - https://scikit-learn.org/stable/datasets/toy_dataset.html#diabetes-dataset
+- Check StreamingResponse for large return dataframes: https://stackoverflow.com/questions/61140398/fastapi-return-a-file-response-with-the-output-of-a-sql-query
+
+
+
+# Serving - frontend
