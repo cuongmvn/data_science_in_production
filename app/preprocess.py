@@ -5,7 +5,7 @@ from sklearn.preprocessing import OneHotEncoder
 import joblib
 
 
-def preprocess(dataframe: pd.DataFrame, models_dir) -> pd.DataFrame:
+def preprocess(dataframe: pd.DataFrame, models_dir: Path) -> pd.DataFrame:
     processed_df = dataframe.copy()
     processed_df = preprocess_continuous_data(processed_df)
     processed_df = preprocess_categorical_data(processed_df, models_dir)
